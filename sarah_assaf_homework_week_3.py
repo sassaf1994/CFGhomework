@@ -118,7 +118,6 @@
 #         match_count += 1
 #
 # prize_awarded(match_count)
-# print(match_count)
 
 # TASK 3 ---------------------------------------
 

@@ -12,14 +12,13 @@
 #             input_pin_new = int(input("Your pin is incorrect. Please type in your 4 digit pin again."))
 #             if input_pin_new == actual_pin:
 #                 print("Your pin has been accepted")
-#                 return True
+#                 break
 #             elif try_number == 3:
 #                 raise ValueError("Your pin is incorrect and you have exceeded the max number of tries.")
 #             try_number += 1
 #
 #     else:
 #         print("Your pin has been accepted.")
-#         return True
 #     finally:
 #         print("Thank you for using PythonBank")
 #
@@ -28,11 +27,12 @@
 #     new_balance = bank_balance_now - withdrawal_amount
 #     if new_balance < 0:
 #         raise ValueError("You do not have sufficient funds.")
-#     print(f"Your new balance is {new_balance}")
+#     print(f"Withdrawal Confirmed \nYour new balance is £{new_balance}")
 #     return new_balance
 #
+#
 # def main():
-#     input_user_pin = input("Please type in your 4 digit pin."))
+#     input_user_pin = input("Please type in your 4 digit pin.")
 #     correct_pin = 1234
 #     bank_balance = 100
 #
@@ -43,11 +43,12 @@
 #     bank_balance = withdraw_money(input_withdrawal_amount,bank_balance)
 #
 #
-# main()
+# if __name__ == "__main__":
+#     main()
 
-# QUESTION 3 - Question 2 broken down into multiple testable functions.
+# QUESTION 3 - Question 2 broken down into multiple testable functions. Tests in test_main.py.
 
-
+#
 # def input_pin():
 #     return input("What is your pin?")
 #
@@ -116,8 +117,9 @@
 #     withdrawal_amount = validate_withdrawal(withdrawal_amount)
 #     account_balance = withdraw_money(withdrawal_amount, account_balance)
 #     print(print_balance(account_balance))
-
-# for this program to work, run main()
+#
+# if __name__ == "__main__":
+#     main()
 
 
 
